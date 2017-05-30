@@ -62,7 +62,7 @@
       }
     },
     {
-      "apiVersion": "[parameters('apiVersion')]",
+      "apiVersion": "2017-04-01",
       "type": "Microsoft.Network/networkInterfaces",
       "name": "[concat(parameters('vmName'), padLeft(copyindex(1),2,'0'), 'NI01')]",
       "tags": {
@@ -88,7 +88,7 @@
       }
     },
     {
-      "apiVersion": "[parameters('apiVersion')]",
+      "apiVersion": "2017-03-30",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(parameters('vmName'), padLeft(copyindex(1),2,'0'))]",
       "tags": {
